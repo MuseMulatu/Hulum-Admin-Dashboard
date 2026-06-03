@@ -3,6 +3,7 @@ import AssignmentQueue from './pages/AssignmentQueue';
 import DriverApprovals from './pages/DriverApprovals'; 
 import PaymentQueue from './pages/PaymentQueue';
 import { LayoutDashboard, Users, Car, CreditCard } from 'lucide-react';
+import RouteAudit from './pages/RouteAudit';
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,7 @@ function App() {
           <Route path="/assignments" element={<AssignmentQueue />} />
           <Route path="/drivers" element={<DriverApprovals />} />
           <Route path="/payments" element={<PaymentQueue />} />
+          <Route path="/audit" element={<RouteAudit />} />
         </Routes>
       </div>
     </div>
